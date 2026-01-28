@@ -1,0 +1,12 @@
+﻿[General]
+diskMode=thin
+ds=nvme
+name=UAGINT02
+netBackendNetwork=LAB
+netInternet=LAB
+netManagementNetwork=LAB
+source=E:\OMNISSA\UAG\euc-unified-access-gateway-25.12.0.0-19824103628_OVF10.ova
+target=vi://administrator@corp.local:Elisa1974Amore!@vcenter01.pollaio.lan/DC01/host/CLU04/viesxi05.pollaio.lan
+[SSLCert]
+pemPrivKey=E:\certificati\rsa_privatekey.pem
+pemCerts=E:\certificati\certificate.pem
