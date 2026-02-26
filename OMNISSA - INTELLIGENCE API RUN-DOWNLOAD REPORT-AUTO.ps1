@@ -20,7 +20,7 @@ Parameter description
 -ClientSecret 7A6BF0FCC3B09377592E4520625FBB8Fx1490E9C95C5DBECA440D465697A7992 
 -ReportId 1525846c-bf15-4345-994b-4a03fe5d3911 -OutputPath "C:\Attimo\"
 
-'.\OMNISSA - INTELLIGENCE API RUN-DOWNLOAD REPORT-AUTO.ps1' -ServiceAccount service_account@4327e213-dceb-4e7a-8d19-3f6aadc8da14.workspaceone.com -ClientSecret 7A6BF0FCC3B09377592E4520625FBB8F71490E9C95C5DBECA440D465697A7992 -ReportId 1525846c-bf15-4345-994b-4a03fe5d3911 -OutputPath "C:\Attimo\"
+'.\OMNISSA - INTELLIGENCE API RUN-DOWNLOAD REPORT-AUTO.ps1' -ServiceAccount service_account@4327e213-d8d19-3f6aadc8da14.workspaceone.com -ClientSecret 7A6BF0FCC3B520625FBB8F71490E9C95C5DBECA440D465697A7992 -ReportId 1525846c-bf15-4345-994b-4a03fe5d3911 -OutputPath "C:\Attimo\"
 '.\OMNISSA - INTELLIGENCE API RUN-DOWNLOAD REPORT-AUTO.ps1' -ServiceAccount <Account> -ClientSecret <Secret> -ReportId <ReportID> -OutputPath "<PATH>"
 .NOTES
 General notes
@@ -257,5 +257,6 @@ $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $fullPath = Join-Path $OutputPath "report_Intelligence_$timestamp.json"
 
 $report | ConvertTo-Json -Depth 10 | Set-Content -Path $fullPath -Encoding utf8
+
 
 Write-Host "Report salvato in: $fullPath" -ForegroundColor Green
